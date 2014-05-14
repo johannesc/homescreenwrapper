@@ -59,7 +59,7 @@ public class ScreenService extends Service {
             Log.i(LOG_TAG, "Start fibaro!");
             startFibaro();
         }
-        return super.onStartCommand(intent, flags, startId);
+        return START_STICKY;
     }
 
     private void startFibaro() {
